@@ -1,5 +1,14 @@
-// Example JavaScript for the contact form
+// Smooth scrolling for navigation links
+document.querySelectorAll('header nav ul li a').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
 
+// Example JavaScript for the contact form
 document.getElementById('contact-form').addEventListener('submit', function(e) {
     e.preventDefault(); // Prevent the form from submitting the traditional way
 
