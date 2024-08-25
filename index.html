@@ -1,16 +1,94 @@
-<section id="projects" class="section animate__animated animate__fadeInUp">
-    <h2>Projects</h2>
-    <div class="project-list">
-        <div class="project">
-            <h3>Deep Noise Suppression using Autoencoders</h3>
-            <p>This project showcases the application of autoencoders for image denoising. The model was trained on the MNIST dataset to remove various types of noise, including Gaussian, salt-and-pepper, and speckle noise, restoring corrupted images effectively.</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Machine Learning Engineer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="#home">My Portfolio</a>
+            </div>
             <ul>
-                <li><strong>Libraries Used:</strong> PyTorch, Torchvision, NumPy, Matplotlib</li>
-                <li><strong>Concepts Involved:</strong> Autoencoders, Image Denoising, Convolutional Neural Networks (CNNs)</li>
-                <li><strong>Results:</strong> The autoencoder successfully denoised images, handling different noise types, with visualizations showing improved image quality.</li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-            <a href="https://github.com/narendrasaisatish/Deep-Noise-Suppression-using-Autoencoders" target="_blank">View on GitHub</a>
+        </nav>
+    </header>
+
+    <section id="home" class="section">
+        <div class="intro animate__animated animate__fadeIn">
+            <h1>Welcome to My Portfolio</h1>
+            <p>I am a Machine Learning Engineer specializing in NLP, AI, and Language Models</p>
         </div>
-        <!-- Existing projects can stay here or you can add more -->
-    </div>
-</section>
+    </section>
+
+    <section id="about" class="section animate__animated animate__fadeInUp">
+        <h2>About Me</h2>
+        <p>Insert a brief bio about yourself, your experience, and your interests.</p>
+    </section>
+
+    <section id="projects" class="section animate__animated animate__fadeInUp">
+        <h2>Projects</h2>
+        <div class="project-list">
+            <div class="project">
+                <h3>Deep Noise Suppression using Autoencoders</h3>
+                <p>This project showcases the application of autoencoders for image denoising. The model was trained on the MNIST dataset to remove various types of noise, including Gaussian, salt-and-pepper, and speckle noise, restoring corrupted images effectively.</p>
+                <ul>
+                    <li><strong>Libraries Used:</strong> PyTorch, Torchvision, NumPy, Matplotlib</li>
+                    <li><strong>Concepts Involved:</strong> Autoencoders, Image Denoising, Convolutional Neural Networks (CNNs)</li>
+                    <li><strong>Results:</strong> The autoencoder successfully denoised images, handling different noise types, with visualizations showing improved image quality.</li>
+                </ul>
+                <a href="https://github.com/narendrasaisatish/Deep-Noise-Suppression-using-Autoencoders" target="_blank">View on GitHub</a>
+            </div>
+            <!-- Add more projects as needed -->
+        </div>
+    </section>
+
+    <section id="skills" class="section animate__animated animate__fadeInUp">
+        <h2>Skills</h2>
+        <ul>
+            <li>Machine Learning</li>
+            <li>Natural Language Processing</li>
+            <li>Artificial Intelligence</li>
+            <li>Language Models</li>
+            <!-- Add more skills as needed -->
+        </ul>
+    </section>
+
+    <section id="contact" class="section animate__animated animate__fadeInUp">
+        <h2>Contact</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Your Name</p>
+        <div class="socials">
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
